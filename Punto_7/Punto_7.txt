@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Punto_7 {
+
+		public static void main(String[] args) {
+			Scanner entrada = new Scanner(System.in);
+			int resp;
+			int num1;
+			int num2;
+			int result; 
+			
+			System.out.println("Ingresar un numero: ");
+			num1 = entrada.nextInt();
+			System.out.println("Ingresar un numero: ");
+			num2 = entrada.nextInt();
+			
+			
+			System.out.println("Operaciones: ");
+			System.out.println("1_Suma");
+			System.out.println("2_Resta");
+			System.out.println("3_Division");
+			System.out.println("4_Multiplicacion");
+			
+		resp = entrada.nextInt();
+		switch(resp){
+		case 1: result = num1 + num2;
+		System.out.println("El resultado es: "+result);
+		break;
+		
+		case 2: result = num1 - num2;
+		System.out.println("El resultado es: "+result);
+		break;
+		
+		case 3: result = num1 / num2;
+		System.out.println("El resultado es: "+result);
+		break;
+		
+		case 4: result = num1 * num2;
+		System.out.println("El resultado es: "+result);
+		break;
+		}
+		}
+
+	}
